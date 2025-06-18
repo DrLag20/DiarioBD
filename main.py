@@ -2,6 +2,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 # Conectando a la biblioteca de bases de datos
 from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
 
 app = Flask(__name__)
@@ -23,6 +24,14 @@ class Card(db.Model):
     subtitle = db.Column(db.String(300), nullable=False)
     # Texto
     text = db.Column(db.Text, nullable=False)
+    # Fecha
+    date = db.Column(db.DateTime, nullable=False, default=db.func.current_timestamp())
+    # Categoría
+    category = db.Column(db.String(100), nullable=True)
+    # Etiquetas
+    tags = db.Column(db.String(100), nullable=True)
+    # Autor
+    author = db.Column(db.String(100), nullable=True)
 
     # Salida del objeto y del id
     def __repr__(self):
@@ -45,7 +54,7 @@ def login():
             form_login = request.form['email']
             form_password = request.form['password']
 
-            # Asignación #4. Aplicar la autorización
+            # Aplicar la autorización
             user = User.query.filter_by(email = form_login, password = form_password).first()
             if user:
                 return redirect(url_for("index"))
@@ -103,9 +112,22 @@ def form_create():
         title = request.form['title']
         subtitle = request.form['subtitle']
         text = request.form['text']
+        date_str = request.form['date']  # Formato de fecha: YYYY-MM-DD
+        category = request.form['category']
+        tags = request.form['tags']
+        author = request.form['author']
 
-        # Creación de un objeto que se enviará a la base de datos
-        card = Card(title=title, subtitle=subtitle, text=text)
+        date = datetime.strptime(date_str, '%Y-%m-%d')
+
+        card = Card(
+            title=title,
+            subtitle=subtitle,
+            text=text,
+            date=date,
+            category=category,
+            tags=tags,
+            author=author
+        )
 
         db.session.add(card)
         db.session.commit()

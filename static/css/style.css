@@ -4,7 +4,7 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #0F172A;        /* el color de la zona de seguimiento */
+    background: #063116;        /* el color de la zona de seguimiento */
   }
   
   body::-webkit-scrollbar-thumb {
@@ -22,7 +22,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 20px;
-    background-color: #0F172A;
+    background-color: #063322;
     color: #F8FAFC;
 }
 
@@ -82,7 +82,7 @@ ul {
     width: 350px;
     height: 500px;
     transition: 0.2s;
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(64, 133, 112, 0.4);
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 
@@ -131,7 +131,7 @@ ul {
 
 .card--creat:hover,
 .card:hover {
-    box-shadow: 0px 4px 10px rgba(14, 165, 233, 1);
+    box-shadow: 0px 4px 10px rgb(75, 218, 158);
 }
 
 .creat-form {
@@ -168,7 +168,7 @@ ul {
 }
 
 .form__input {
-    background: #0F172A;
+    background: #08360e;
     border-radius: 10px;
     padding: 10px;
     height: 30px;
@@ -183,7 +183,7 @@ ul {
 }
 
 .form__text {
-    background: #0F172A;
+    background: #051b0b;
     border-radius: 10px;
     padding: 10px;
     color: #F8FAFC;
@@ -194,7 +194,7 @@ ul {
 
 .form__button {
     border: 1px solid rgba(14, 165, 233, 1);
-    background: #0F172A;
+    background: #410f30;
     border-radius: 10px;
     color: rgba(14, 165, 233, 1);
     padding: 10px;
@@ -239,7 +239,7 @@ ul {
 .main__link {
     display: block;
     border: 1px solid rgba(14, 165, 233, 1);
-    background: #0F172A;
+    background: #0a1f11;
     border-radius: 10px;
     color: rgba(14, 165, 233, 1);
     padding: 15px 10px;
@@ -269,7 +269,7 @@ ul {
     gap: 30px;
     flex-direction: column;
     align-items: center;
-    background: rgba(30, 41, 59, 0.4);
+    background: rgba(9, 31, 24, 0.856);
     border-radius: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }

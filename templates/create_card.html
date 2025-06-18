@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The programmer's library</title>
+    <title>My ideas</title>
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
@@ -21,7 +21,12 @@
         {% block content %}
         <form action="{{ url_for('form_create') }}" method="post" class="creat-form">
             <div class="form__card">
-                <img class="card__img" src="../static/img/post_icon.png" width="250" height="250" alt="post_icon">
+                <img class="card__img" src="{{ url_for('static', filename='img/ambfinal.png') }}" alt="ambfinal" width="220" height="220">
+                <h2 class="form__title">Escribir una idea</h2>
+                <p class="form__subtitle">Escribe algo interesante</p>
+                <p class="form__error">{{ error }}</p>
+                <p class="form__success">{{ success }}</p>
+                <p class="form__info">Los campos son obligatorios para facilitar la creación de la tarjeta</p>
                 <div class="form__inputs">
                     <label for="title">
                         <input class="form__input" type="text" name="title" id="title" placeholder="Escriba el título de la entrada" required>
@@ -32,6 +37,24 @@
                 </div>
                 <label for="text">
                     <textarea class="form__text" name="text" id="text" cols="30" rows="10" required placeholder="Escribe algo de texto..."></textarea>
+                </label>
+                <label for="date">
+                    <input class="form__input" type="date" name="date" id="date" required>
+                </label>
+                <label for="category">
+                    <select class="form__input" name="category" id="category" required>
+                        <option value="" disabled selected>Seleccione una categoría</option>
+                        <option value="weather">Clima</option>
+                        <option value="environment">Ambiente</option>
+                        <option value="lifestyle">Vida</option>
+                        <option value="other">Otro</option>
+                    </select>
+                </label>
+                <label for="tags">
+                    <input class="form__input" type="text" name="tags" id="tags" placeholder="Escriba las etiquetas separadas por comas" required>
+                </label>
+                <label for="author">
+                    <input class="form__input" type="text" name="author" id="author" placeholder="Escriba el nombre del autor" required>
                 </label>
                 <button class="form__button">Crear</button>
             </div>
