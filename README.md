@@ -25,12 +25,12 @@ Este proyecto puede ser utilizado por:
 - Añade etiquetas, fechas y más a tu tarjeta.
 
 ### 🎈 Interfaz simple
-- Gráficas semanales y mensuales del progreso individual.
-- Comparativas con la media nacional y mundial.
+- Una interfaz de usuario muy simple y fácil de comprender.
+- Nunca te vas a perder o te quedarás sin saber qué hacer debido a lo fácil que es de usar y manejar.
 
 ### 🔔 Comparte tus ideas con los demás
-- Desafíos ecológicos semanales (ej: una semana sin usar el coche).
-- Recompensas simbólicas y medallas digitales.
+- Comparte tus ideas con otros para poder ayudar aún más a nustro querido ambiente.
+- Discute sobre las mejores maneras para lograr los objetivos establecidos.
 
 ### 🔒 Buena seguridad
 - Sistema de cuentas para prevenir el uso inapropiado o no autorizado de tus tarjetas o ideas.
@@ -44,19 +44,44 @@ Este proyecto puede ser utilizado por:
 ![image](https://github.com/user-attachments/assets/785f340f-c798-4286-87f9-bff80d161a22)
 - Puede verse un poco vacía, pero cuando empiezas a crear tarjetas, ¡se ve mucho mejor!
 ![image](https://github.com/user-attachments/assets/14a23812-1bf3-40a1-834e-9b75a3d80522)
-
+- Tal vez te preguntes cómo se vería si haces varias tarjetas... Tal vez se arruine todo si pasa esto, pero no es así, las tarjetas se ordenan en columnas y filas.
+![image](https://github.com/user-attachments/assets/4ffa477e-2e76-49ae-8a50-3248f22c66e3)
+![image](https://github.com/user-attachments/assets/0d884a03-dac2-4c38-a9f7-ea0b0406a74c)
 ---
 
 ## 🛠️ Instalación y Uso del Proyecto
 
-### Requisitos:
+### 🧱 Requisitos:
 - Computadora con Visual Studio instalado.
-- Python.
-- 
+- Última versión de Python preferiblemente.
+- Sistema operativo compatible.
 
-### Instalación:
+### 🔌 Instalaciones dentro de Visual Studio:
+- Flask instalado.
+- SQL instalado.
+- Puedes instalar cualquier otro programa que veas necesario o quieras usar si deseas hacer cambios a el código.
+
+### 💾 Instalación:
 ```
 git init
 git clone https://github.com/DrLag20/DiarioBD.git
 ```
-- Ejecuta el proyecto y todo debería funcionar correctamente, si no es así, asegura tener instalado todos los requisitos mencionados anteriormente.
+### 💻 Ejecuta el proyecto y todo debería funcionar correctamente, si no es así, asegura tener instalado todos los requisitos mencionados anteriormente.
+---
+
+## 🎇 Ideas futuras
+- También quisiera hablar sobre unas ideas futuras y personales que tengo para este proyecto, como pueden ver, el proyecto puede mejorarse bastante en lo que es la interfaz visual, incluso añadir nuevas funciones para hacerlo más completo, cómodo y accesible para todos.
+
+- El proyecto aún no es una página web pública que se mantiene online siempre, simplemente es una página lanzada desde un servidor local, en el futuro podría convertirse en una página web a la que sí puedas acceder en todo momento sin necesidad de tener que lanzarlo desde tu computadora.
+
+- Podría perfectamente convertirse en una aplicación para dispositivos móviles, esto haría más fácil su acceso y uso para todos, esto claramente necesitaría varias modificaciones para convertir el proyecto en una aplicación funcional y cómoda de usar.
+
+
+
+
+
+
+
+
+
+
