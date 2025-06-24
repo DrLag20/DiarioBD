@@ -66,6 +66,8 @@ Este proyecto puede ser utilizado por:
 git init
 git clone https://github.com/DrLag20/DiarioBD.git
 ```
+- Nota: La base de datos se crea de forma automática al ejecutar el código principal.
+
 ### 💻 Ejecuta el proyecto y todo debería funcionar correctamente, si no es así, asegura tener instalado todos los requisitos mencionados anteriormente.
 ---
 
