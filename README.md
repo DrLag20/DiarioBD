@@ -1,6 +1,6 @@
 # 🌱 Mi diario ambiental - ¡Escribe tus ideas de cómo mejorar el ambiente!
 
-**Autor:** .
+**Autor:** Vladimir
 
 **Descripción:**  
 Mi diario ambiental es un sitio web diseñado para que puedas crear unas tarjetas en las cuales luego podrás personalizarlas, en estas escribirás tu idea con su respectivo título, subtítulo, y la idea, también puedes agregar la fecha, etiquetas y tu nombre en las cartas para tenerlas organizadas de una mejor manera.
